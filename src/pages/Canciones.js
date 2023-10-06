@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 
 //IMPORT COMPONENTES
 //segunda forma de presentar el listado de peliculas usando padre e hijo
-import Cancion from './Cancion';
+import Cancion from '../components/Cancion';
 
-import Slider from './Slider';
-import Sidebar from './Sidebar';
+import Slider from '../components/Slider';
+import Sidebar from '../components/Sidebar';
 
 
 class Canciones extends Component {

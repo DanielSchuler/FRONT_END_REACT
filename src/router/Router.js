@@ -4,27 +4,21 @@
 import React from "react";
 //import { BrowserRouter, Route, Routes, Link, Outlet, useParams } from 'react-router-dom';
 import { BrowserRouter, Route, Routes, useParams} from 'react-router-dom';
-
+//PAGES
+import NotFound from "../pages/NotFound";
+import Blog from "../pages/Blog";
+import Article from "../pages/Article";
+import Canciones from "../pages/Canciones";
+import Formulario from "../pages/Formulario";
+import Home from "../pages/Home";
 
 import SeccionPruebas from "../components/SeccionPruebas";
 import MiComponente from "../components/MiComponente";
-import NotFound from "../components/NotFound";
-
 
 // IMPORTAR COMPONENTES
 import Header from '../components//Header';
-
-
 import Footer from '../components/Footer';
-
-//IMPORT DE COMPONENTES PAGINAS
-
-import Home from "../components/Home";
-import Blog from "../components/Blog";
-import Formulario from "../components/Formulario";
-import Canciones from "../components/Canciones";
 import Search from "../components/Search";
-import Article from "../components/Article";
 import CreateArticle from "../components/CreateArticle";
 //import SearchWrapper from "../components/Search";
 

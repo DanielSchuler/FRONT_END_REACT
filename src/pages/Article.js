@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import Global from "../Global";
 import no_image from './../assets/images/no_image.jpeg';
-import Sidebar from "./Sidebar";
+import Sidebar from '../components/Sidebar';
 
 import Moment from 'react-moment';
 import 'moment/locale/es';
@@ -63,7 +63,7 @@ function Article() {
                                     {article.content}
                                 </p>
                                 <div>
-                                <a href="#" className="btn btn-danger ">Eliminar Articulo</a>
+                                <a href="#" className="btn btn-danger ">Eliminar </a>
                                 <a href="#" className="btn btn-warning ">Borrar</a>
                                 </div>
                                 <div className="clearfix"></div>

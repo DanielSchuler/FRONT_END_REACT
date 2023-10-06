@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
 
+
 //IMPORT COMPONENTS
-import Slider from './Slider';
-import Sidebar from './Sidebar';
-import Articles from './Articles';
+import Slider from '../components/Slider';
+import Sidebar from '../components/Sidebar';
+import Articles from '../components/Articles';
 
 
 
