@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+
+// IMPORTAR ASSETS
+
+import './assets/styles/css/App.css';
+
+
+
+
+//IMPORTO EL ROUTER QUE TIENE LA RUTA A LOS COMPONENTES 
+// este se encarga de pintar el componente que sea necesario segun la ruta
+import Router from './router/Router';
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+      <Router/>
+     
+      
     </div>
+    
   );
 }
 

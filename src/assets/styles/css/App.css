@@ -1,0 +1,607 @@
+body{
+  text-align: center;
+  /*background: red;*/
+
+  /*se formatean los estilos por defecto*/
+  margin:0px;
+  padding: 0px;
+
+  /*cambiar la fuente*/
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* FUENTES*/
+  /* suavizar la fuente*/
+  -webkit-font-smoothing: antialiased;
+  /* suavizar la fuente para mozila firefox*/
+  -moz-font-smoothing: antialiased;
+  /* suavizar la fuente para mozila en mac*/
+  -moz-osx-font-smoothing: antialiased;
+}
+
+/*
+--------------MAQUETACION DEL HEADER------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+#header {
+  border-top: 1px solid black;
+  height: 120px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  border-top:5px solid #61dafb;
+}
+.center{
+  width: 65%;
+  margin: 0px auto;
+}
+
+.active {
+  border-bottom: 2px solid blue; /* For example */
+}
+
+
+/*para que el contenido de la pagina no se pase a la cabecera
+          limpiaremos los flotados*/
+.clearfix{
+  clear:both;
+  float: none;
+}            
+#logo{
+  width: 40%;
+  font-size:30px;
+  float:left;
+  margin-top: 35px;
+}
+
+#logo img{
+  display: block;
+  float: left;
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+
+/*ANIMACION AL LOGO--------------------*/
+#logo img{
+  /*animation: nombre-animacion duracion-animacion forma-reproduccion-animacion;*/
+  animation: crecer infinite 5s linear;
+}
+
+@keyframes crecer {
+  /*10%{
+      height: 100px;
+
+  }
+  100%{
+      height: -100px;
+  }*/
+
+  /*otra froma de generar la animacion usando from y to*/
+  from{
+      transform:rotate(0deg);
+  }
+  to{
+      transform:rotate(360deg);
+  }
+}
+/*ANIMACION AL LOGO--------------------*/
+#brand{
+  display: block;
+  margin:0px;
+  float: left;
+
+}
+
+#curso{
+  display: block;
+  margin:0px;
+  float: left;
+
+}
+
+
+#menu{
+  width: 60%;
+  float: right;
+  font-size: 18px;
+}
+
+#menu ul{
+  line-height: 85px;
+  width: 90%;
+  float: right;
+}
+
+#menu ul li{
+  display: inline-block;
+  list-style: none;
+  height: 46px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#menu a{
+  text-decoration: none;
+  color:#444;
+  transition: 300ms all;
+}
+#menu a:hover{
+  
+  color:#3cb2d3;
+  
+}
+
+
+/*
+--------------MAQUETACION DEL SLIDER BIG------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+#slider{
+  background: #61dafb;
+  width: 100%;
+  height: 350px;
+   /*line-height: 320px; */
+  color: white;
+  text-shadow: 0px 0px 5px  #444  ;
+  /*para degradados
+      en google buscar css gradent generator y buscar cssmatic
+  */
+
+  background: rgba(73,155,234,1);
+  background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+  background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+
+
+}
+
+#slider h1{
+   /*line-height: 320px; */
+  margin:0px 0px 0px 10px;
+  
+  
+  padding: 0px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.btn-white{
+  /*
+  The issue you're encountering with the btn-white 
+  class not taking the specified width might be due 
+  to the fact that the <a> element inside the #slider 
+  div is an inline-level element by default. Inline-level 
+  elements do not respond to width and height properties.
+  */
+  display: block; /* or display: inline-block; */
+  background: white;
+  color:rgb(85, 82, 82);
+  padding: 10px;
+  width: 100px;
+  height: 35px;
+  margin: 0px auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: none ;
+  text-decoration: none;
+  line-height: 35px;
+  box-shadow: 0px 0px 5px rgb(85, 82, 82);;
+  margin-top: 40px ;
+  border-radius: 4px;
+  transition: 300ms all;
+}
+
+
+.btn-white:hover {
+  background: #444;
+  color:white;
+}
+
+/*
+--------------MAQUETACION DEL SLIDER SMAL------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+#slider.slider-small{
+  height: 150px ;
+}
+#slider.slider-small h1{
+       /*line-height: 320px; */
+       margin:0px 0px 0px 10px;
+  
+  
+       padding: 0px;
+       padding-top: 53px;
+       text-align: center;
+}
+
+
+/*
+--------------MAQUETACION DEL CONTENT------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+#content{
+  width: 70%;
+  float:left;
+  /*border: 1px solid red;*/
+  min-height: 650px;
+  margin-right: 20px ;
+}
+.sub-header{
+  font-size: 38px;
+  /*border-bottom: 1px solid #eee;*/
+  padding-bottom: 10px;
+}
+/*
+--------------MAQUETACION DEL SIDEBAR------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+#sidebar{
+  width: 25%;
+  float: left;
+  /*border: 1px solid green;*/
+}
+
+.sidebar-item{
+  background: #f7f7f7;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.sidebar-item h3{
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0px ;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #eee;
+}
+
+/*
+--------------MAQUETACION DEL OPCIONES SIDEBAR------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+
+.sidebar-item .btn{
+  margin: 0 auto;
+  margin-top: 10px;
+  
+
+}
+.btn{
+  display: block;
+  background: black;
+  color: white;
+  padding: 15px;
+  font-weight: bold ;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none ;
+  max-width: 120px;
+  transition: 300ms all;
+  border: none;
+  cursor: pointer;
+}
+.btn-success{
+  background: rgb(23, 148, 23);
+}
+
+.btn-success:hover{
+  background: black;
+}
+.btn-danger{
+  background: red;
+  color:white!important;
+  float:left;
+  margin-right: 20px;
+}
+.btn-warning{
+  background: rgb(168, 118, 9);
+  color:white!important;
+  float: left;
+}
+
+/*
+--------------MAQUETACION DE LA BARRA DE BUSQUEDA DEL SIDEBAR------------------------------------------------
+------------------------*TAMBIEN LOS TEXT AREAS----------------------------------------
+----------------------------------------------------------------
+*/
+input[type="text"],
+textarea,
+input[type="file"]{
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition:300ms all;
+
+}
+
+input[type="text"]:focus,
+textarea:focus{
+box-shadow: 0px 0px 10px #a3a0a0 inset;
+
+}
+textarea{
+  width: 100%;
+  height: 150px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+
+}
+
+input[type="submit"]{
+  margin-top: 15px;
+}
+
+/*
+--------------MAQUETACION DEL FOOTER------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+#footer{
+  background: #f7f7f7;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  color: #444;
+}
+
+footer p{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+/*
+--------------MAQUETACION DE LOS ARTICULOS------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+.article-item{
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px ;
+  text-align: left;
+
+
+
+}
+
+.article-item .image-wrap{
+  width: 255px;
+  height: 190px;
+  overflow: hidden;
+  float:left;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}
+
+.article-item .image-wrap img{
+height: 100%;
+width: 100%;
+text-align: center;
+}
+
+.article-item h2{
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+}
+
+.article-item .date{
+  display: block;
+  width: 100%;
+  color:rgb(121, 118, 118);
+}
+
+.article-item a{
+  display: block;
+  color: #444;
+  text-decoration: none;
+  margin-top:10px ;
+}
+
+.article-item a:hover{
+
+  text-decoration: underline;
+
+}
+
+
+/*
+--------------MAQUETACION DE LOS DETALLES DE ARTICULOS------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+.article-detail .image-wrap{
+float : none;
+width: 100%;
+height: 300px;
+}
+
+.article-detail .image-wrap img{
+  width: 100%;
+  height: auto;
+}
+
+.article-detail .sub-header{
+  margin-bottom: 15px;
+  margin-bottom: 0px;
+  border: none;
+
+}
+
+/*
+--------------MAQUETACION DE LOS FORMULARIOS------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+*/
+
+.mid-form{
+  width: 50%;
+  margin: 0px auto;
+}
+.mid-form label{
+  display: block;
+  float:left;
+  text-align:left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.radio-buttons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float:left;
+}
+
+
+/*
+--------------MAQUETACION DE RESPONSIVE------------------------------------------------
+---------------MEDIA QUERY-----------------------------
+----------------------------------------------------------------
+*/
+/* Ejemplo desde la anchura 0px hasta la anchura 1488px de la pantalla background red
+@media (max-width:1488px){
+  body{
+      background: red;
+  }
+
+}*/
+
+
+/* Ejemplo desde la anchura 0px hasta la anchura 963px de la pantalla background red
+  el mas pequeño sobre escribe al mas grande
+
+@media (max-width:9638px){
+  body{
+      background: green;
+  }
+
+}*/
+
+@media (max-width:1488px){
+  body{
+      .center{
+          width: 85%;
+      }
+  }
+
+}
+
+@media (max-width:1115px){
+
+  menu ul{
+      width: auto;
+  }
+
+}
+
+@media (max-width:997px){
+
+  #logo{
+      float:none;
+      width:350px;
+      margin: 0px auto;
+      margin-top: 2px;
+      font-size: 25px;
+  }
+  #menu,
+  #menu ul{
+      clear:both;
+      float:none;
+      width: 100%;
+      margin:0px;
+      padding: 0px;
+      line-height: 43px;
+      font-size: 15px;
+  }
+
+  #content{
+      float:none;
+      width: 100%;
+  }
+  #sidebar{
+      float: none;
+      width: 60%;
+      margin: 0px auto;
+      margin-bottom: 50px;
+  }
+
+  #slider h1{
+      padding-top: 100px;
+      font-size: 25px;
+  }
+  .mid-form{
+      width: 70%;
+  }
+
+}
+
+@media (max-width:497px){
+
+  body{
+      .center{
+          width: 90%;
+      }
+  }
+  #header{
+      min-height: 130px;
+      overflow: hidden;
+  }
+  #menu ul li{
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+  #slider{
+      height: 180px;
+  }
+  #slider h1{
+      font-size: 19px;
+      padding-top: 15px;
+  }
+  #slider h2{
+      font-size: 14px;
+      padding-top: 10px;
+  }
+  #slider .btn-white{
+      margin-top: 10px;
+      width: 70px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 14px;
+  }
+  #slider.slider-small{
+      height: 100px;
+  }
+  #slider.slider-small h1{
+      padding-top: 35px;
+  }
+
+}
